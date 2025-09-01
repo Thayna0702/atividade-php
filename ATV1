@@ -1,0 +1,116 @@
+<?php
+
+$titulo = "Bem Vindo ao PHP";
+$titulo1 = "Amadores do TI";
+$nome = "thayna";
+$mensagem = "Olá, $nome seja muito bem vindo à nossa página! Estamos felizes em tê-lo aqui.";
+$idade = "23";
+$altura = "1,67";
+$mensagem1 = "Vamos começar sua identificação:";
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title><?php print $titulo; ?></title>
+</head>
+
+<body>
+	<h1> <?php print $titulo1 ?></h1>
+	<p> <?php print $mensagem; ?></p>
+	<p> <?php print $mensagem1; ?></p>
+	<ul>
+		<li> Nome: <?php print $nome ?></li>
+		<li> Idade: <?php print $idade ?></li>
+		<li> Altura: <?php print $altura ?></li>
+	</ul>
+</body>
+</head>
+
+<?php define("PI", 3.14159);
+define("Professor", "Mariana");
+echo "O valor de PI é " . PI . "<br>";
+echo "O nome do professor(a) é " . Professor; ?>
+
+<?php $num1 = 10;
+$num2 = 40;
+
+$soma = $num1 + $num2;
+$subtracao = $num1 - $num2;
+$multiplicacao = $num1 * $num2;
+$divisao = $num1 / $num2;
+$resto = $num1 % $num2;
+
+echo "<p> Considerando as variáveis 10 e 40 os resultados matemáricos foram:</p>";
+echo "Soma: $soma <br>";
+echo "Subtração: $subtracao <br>";
+echo "Multiplicação: $multiplicacao <br>";
+echo "Divisão: $divisao <br>";
+echo "Resto da divisão: $resto <br>";
+
+?>
+
+<?php
+$num3 = 1;
+$num4 = 2;
+
+echo "<p> Comparação das variáveis 1 e 2, utilizando o ==, !=, >,<,>=,<= </p>";
+echo "Comparação (==): ";
+var_dump($num3 == $num4);
+echo "<br>";
+
+echo "Comparação (!=): ";
+var_dump($num3 != $num4);
+echo "<br>";
+
+echo "Comparação (>): ";
+var_dump($num3 > $num4);
+echo "<br>";
+
+echo "Comparação (<): ";
+var_dump($num3 < $num4);
+echo "<br>";
+
+echo "Comparação (>=): ";
+var_dump($num3 >= $num4);
+echo "<br>";
+
+echo "Comparação (<=): ";
+var_dump($num3 <= $num4);
+echo "<br>";?>
+
+<?php 
+$var1 = true;
+$var2 = false;
+
+echo "<p> Utilizando Var1 sendo true e Var2 sendo false: </p>";
+
+echo "Expressão (&&): ";
+var_dump($var1 && $var2);
+echo "<br>";
+
+echo "Expressão (||): ";
+var_dump($var1 || $var2);
+echo "<br>";
+
+echo "Expressão (!Var1): ";
+var_dump(!$var1);
+echo "<br>";
+
+echo "Expressão (!Var2): ";
+var_dump(!$var2);
+echo "<br>";
+echo "<br>"; ?>
+
+
+<?php 
+$num5 = 50;
+
+if ($num5 > 0 && $num5 % 2 == 0) {
+	echo "<h3 style='color: green;'> O número $num5 é positivo e par.</h3>";
+} else {
+	echo "<h3 style='color: red;'>O número $num5 não é positivo e par.</h3>";
+}
+?>
